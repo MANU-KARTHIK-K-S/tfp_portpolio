@@ -1,0 +1,278 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+html{
+    font-size: 10px;
+    font-family:sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header{
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+}
+.header h1{
+    color: white ;
+}
+
+#header .header{
+    min-height: 8vh;
+    background-color: darkcyan;
+}
+.header .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
+}
+#header .nav-list ul li{
+    display: inline;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.header li a{
+    color: white;
+}
+
+#hero{
+    background-image: url(./hero-bg.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+#hero::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(87, 202, 116);
+    opacity: .5;
+    z-index: -1;
+}
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: darkcyan;
+
+}
+#hero{
+    background-image: url(./hero-bg.jpg);
+    background-size: cover;
+    background-position: top center;
+    position:relative;}
+
+#hero .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: darkcyan;
+    background-color: transparent;
+    border: 2px solid darkcyan;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+
+}
+#hero .cta:hover{
+    color: white;
+    background-color: darkcyan;
+}
+
+#edu .title1{
+    font-size: 4rem;
+    font-weight: 500;
+    color: darkcyan;
+    margin-bottom: 10px;
+    letter-spacing: .2rem;
+    text-align: left;
+    
+}
+#edu .title3{
+    font-size: 2rem;
+    font-weight: 500;
+    color: darkcyan;
+    margin-bottom: 10px;
+    letter-spacing: .2rem;
+    text-align: left;
+}
+#edu .n1{
+    font-size: 2rem;
+    font-weight: 50;
+    color: darkcyan;
+    margin-bottom: 10px;
+    letter-spacing: .2rem;
+    text-align: left;
+    
+}
+#edu .title2{
+    font-size: 3rem;
+    font-weight: 200;
+    color: darkcyan;
+    margin-bottom: 10px;
+    margin-left: 30%;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+
+#edu{
+    background-image: url(./hero-bg.jpg);
+    background-size: cover;
+    background-position: top center;
+    position:relative;
+
+}
+#edu .icon{
+    width: 100%;
+    margin-bottom: 20px;
+    margin: auto;
+
+}
+#edu .edu{
+   
+flex-direction: column;
+text-align: left;
+max-width: 1500px;
+}
+#about .about{
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+#about .col-left{
+    width: 250px;
+    height: 360px;
+
+}
+#about .col-right{
+    width: 100%;
+
+}
+#about .col-right h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+#about .col-right p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+#about .col-right .cta{
+    margin-bottom: 50px;
+    padding: 10px 20 px;
+    font-size: 2rem;
+}
+#about .section-title{
+    font-size: 3rem;
+    font-weight: 300;
+    color: darkcyan;
+    margin-bottom: 10px;
+    letter-spacing: .2rem;
+    text-align: center;
+    
+}
+#about{
+    background-image: url(./hero-bg.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;}
+
+  .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: darkcyan;
+    background-color: transparent;
+    border: 2px solid darkcyan;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+
+}
+ .cta:hover{
+    color: white;
+    background-color: darkcyan;
+ }
+#contact{
+    background-image: url(./hero-bg.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;}
+#contact .section-title{
+        font-size: 3rem;
+        font-weight: 300;
+        color: darkcyan;
+        margin-bottom: 10px;
+        letter-spacing: .2rem;
+        text-align: center;
+        
+    }    
+#contact .contact{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+
+}
+#contact .contact-items{
+    width: 400px;
+    
+}
+#contact .contact-item:hover{
+    box-shadow: 0px 0px 5px 0 rgb(241, 233, 233);
+    transition: .3s ease box-shadow;
+    
+}
+#contact .contact-item{   
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px ;
+    margin: 30px;
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 rgb(255, 247, 247);
+}
+#contact .contact-info h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+#contact .contact-info h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2rem;}
